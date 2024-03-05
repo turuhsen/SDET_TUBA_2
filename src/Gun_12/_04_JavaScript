@@ -1,0 +1,19 @@
+HTML nin içinde çalıştırılan kodlara JavaScript denir.
+
+driver a , bana JavaScript çalıştırmak için, bana imkan ver.
+driver üzerinden JavaScript çalıştırma
+JavascriptExecutor js=(JavascriptExecutor)driver;
+
+Scroll
+js.executeScript("window.scrollTo(0,3000)"); -> Baştan Verilen pixel kadar scroll
+js.executeScript("window.scrollBy(0,3000)"); -> bulunduğu yerden pixel kadar scroll
+js.executeScript("window.scrollTo(0,dcument.body.scrollHeight)"); -> Verilen pixel kadar scroll
+
+Elemente kadar Scroll
+("arguments[0].scrollIntoView(true);", element)  -> elemente e kadar kaydırır.
+                                                    true : element sayfanın üstünde gözükene kadar,
+                                                    false: element sayfanın altına gözükene kadar
+                                                    default true;
+
+click
+js.("arguments[0].click();", element)   -> javascript click()  -> javascript click.
